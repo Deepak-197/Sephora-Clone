@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <style>
+        #sign{
+            width: 30%;
+           border-radius: 10px;
+            padding: 20px;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        div>hr{
+          color: gray;
+        }
+        div>h3{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+       
+        form{
+            width: 100%;
+            display: block;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        input[type="text"]{
+            width: 49%;
+            
+            margin-bottom: 10px;
+            height: 40px;
+        }
+        #month,#day{
+            width: 49%;
+            margin-bottom: 10px;
+            height: 40px;
+        }
+        input[type="email"],input[type="password"],input[type="tel"],input[type="number"]{
+            width: 100%;
+            margin-bottom: 10px;
+            resize: vertical;
+            box-sizing: border-box;
+            height: 40px;
+          
+        }
+        img{
+            width: 6%;
+        }
+        input[type="submit"]{
+            border: none;
+            padding: 15px 70px;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            border-radius: 35px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+        #spe{font-size: 13px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: -5px;
+        }
+        hr+p,hr+p+p{
+            font-size: 12px;
+        }
+        *{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="sign">
+    <h3>Create an Account</h3>
+    <hr>
+    <h1><i>Beauty</i>INSIDER</h1>
+    <p>Join the Beauty Insider loyalty program. Earn points, redeem, and more.</p>
+   <form action="" id="form">
+    <div >
+    <input type="text" id="Fname" name="Fname" placeholder="First Name">
+    <input type="text" id="Lname" name="Lname" placeholder="Last Name">
+    </div>
+    <input type="email" id="email" name="email" placeholder="Email Address">
+    <input type="password" id="password" name="password" placeholder="Password(6 to 12 character)">
+    <input type="tel" id="mobile" name="mobile" placeholder="Phone Number">
+    <div>
+    <p id="spe"> <img src="https://www.sephora.com/img/ufe/icons/birthday.svg" alt=""> Enter your birthdate to receive a gift every year.</p>
+    </div >
+    <input type="month" name="month" id="month" placeholder="Month" >
+    <input type="number" id="day" name="day" placeholder="Day" min="1" max="31">
+    <div>
+    <input type="number" id="zip" name="zip" placeholder="ZIP Code(to near about store events near you)">
+        <input type="checkbox" id="keep" name="keep" placeholder="">
+        <label for="">Keep me signed in</label>
+    </div>
+    <hr>
+    <input type="submit" id="submit" value="Join Now">
+   </form>
+   <hr>
+   <p>By clicking “Join Now” you acknowledge that you are a U.S. or Canada resident and (1) have read Sephora’s Privacy Policy and Notice of Financial Incentive, (2), agree to Terms of Use, Beauty Insider Terms, and to automatically receive Beauty Insider offers and notifications via email.</p>
+
+    <p> uses Google ReCaptcha and by registering, users are subject to Google’s privacy policy & terms.</p>
+</div>
+</body>
+</html>
+
+<script>
+    let joinData = JSON.parse(localStorage.getItem("Account-Data")) || [];
+    document.querySelector("form").addEventListener("submit", funJoinNow);
+    function funJoinNow(){
+        event.preventDefault();
+        
+
+        let data={
+            fname : document.querySelector("#Fname").value,
+            lname : document.querySelector("#Lname").value,
+            email : document.querySelector("#email").value,
+            password:document.querySelector("#password").value,
+            mobile: document.querySelector("#mobile").value,
+            month:document.querySelector("#month").value,
+            day : document.querySelector("#day").value,
+            zip:document.querySelector("#zip").value
+        }
+
+        joinData.push(data);
+        console.log(joinData);
+        localStorage.setItem("Account-Data",JSON.stringify(joinData));
+        alert("Account Successfully Created");
+        window.location.reload();
+        window.location.href="Login.html";
+    }
+    
+
+</script>

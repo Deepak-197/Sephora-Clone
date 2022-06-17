@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP page</title>
+    <style>
+         body{
+           margin-left: 0%;
+           margin-right: 0%;
+           background-image: url(https://img.gkbcdn.com/s3/bn/2203/signin-6239450f2b40c91b9c8a4526.jpg);
+           margin-top: 0px;
+           
+        }
+            
+        #logo
+        {
+            height: 120px;
+            width: 100%;
+            margin: auto;
+            /* border: 1px solid red; */
+            /* margin-top: 20px; */
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            align-items: center;
+        }
+        #logo>img
+        {
+            height: 95%;
+            width: 35%;
+           
+        }
+
+
+        #main
+        {
+            margin: auto;
+            /* border: 1px solid black; */
+            width: 32%;
+            height: 200px;
+            margin-top: 60px;
+            margin-bottom: 10px;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            display: flex;
+            align-items: center;
+            /* border: 1px solid red; */
+        }
+
+        #main>#otp
+        {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            margin: auto;
+            /* margin-top: 60px;   */
+            gap: 20px; 
+            /* border: 1px solid black; */
+           
+            
+        }
+
+        #main>#otp>.common
+        {
+            height: 50px;
+            font-size: 20px;
+        }
+
+        #main>#otp>#push
+        {
+            color: white;
+            background-color: rgb(54, 54, 224);
+            border: 0px;
+            border-radius: 10px;
+        }
+
+        #main>#otp>#push:hover
+        {
+            color: white;
+            background-color: rgb(243, 77, 77);
+        }
+    </style>
+</head>
+<body>
+    <div id="logo">
+        <img src="https://www.sephora.com/img/ufe/logo.svg" alt="">
+    </div>
+    <div id="main">
+          <form action="" id="otp">
+            <input type="number" id="key" placeholder="Enter OTP" class="common">
+            <input type="submit" class="common" id="push">
+        </form>
+    </div>
+   
+</body>
+</html>
+<script>
+
+    var output=JSON.parse(localStorage.getItem("PaymentData"));
+    console.log(output)
+    var form2=document.querySelector("#otp").addEventListener("submit",OtpFn);
+
+
+function OtpFn()
+{
+    event.preventDefault()
+    
+    var bag={
+        otp:otp.key.value
+    }
+
+    if(bag.otp=="1234")
+    {
+        alert("Payment Successful");
+        window.location.href="index.html"
+    }
+
+    else{
+        alert("Payment Failed(ERROR): Incorrect OTP")
+    }
+}
+</script>

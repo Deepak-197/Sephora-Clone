@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist Page</title>
+    <link rel="stylesheet" href="Homepage.css">
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #wish{
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Courier New', Courier, monospace;
+            text-decoration: underline;
+        }
+        #products{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(12,440px);
+            gap: 20px 20px;
+        }
+
+        #products>div{
+            padding: 0px 10px 10px 10px;
+            border-radius: 10px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #products>div>img:nth-child(1){
+            width: 100%;
+           height: 60%;
+           border-radius: 10px;
+          
+        }
+        #products>div>img:nth-child(5){
+            width: 8%;
+            margin-top: -60px;
+        }
+        #products>div>p:nth-child(2){
+          font-weight: bold;
+        }
+        #products>div>p:nth-child(4){
+          font-weight: bold;
+          margin-top: -10px;
+        }
+        #products>div>p:nth-child(3){
+          margin-top: -10px;
+        }
+        #products>div>p:nth-child(6){
+            margin-top: -25px;
+            margin-left: 40px;
+        }
+        #products>div>button{
+            width: 100%;
+            height: 30px;
+            background-color: white;
+            color: black;
+            font-size: 16px;
+            border: 2px solid black;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        #products>div>button:hover{
+            background-color: rgb(165, 48, 73);
+            border: none;
+            color: white;
+        }
+        #se1>div>a:nth-child(2)>img{
+            width: 35%;
+            padding: 10px;
+            margin-top: -8px;
+            margin-left: 30px;
+        }
+        #se1>div>a:nth-child(2)>img:hover{
+        width: 43%;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div id="usecode">
+        <div>
+      <p>Enjoy free shipping on all orders with code FREESHIP. See terms ▸</p>
+       </div>
+      </div>
+  
+      <!-- // 2ns part -->
+      <div id="upnav">
+        <div id="se">
+          <div id="div1">
+            <img src="https://www.sephora.com/img/ufe/logo.svg" alt="">
+          </div>
+          <div id="div2">
+            <input type="search" id="search"   placeholder="Search" name="search">
+          </div>
+          <div id="div3">
+            <img src="https://www.sephora.com/img/ufe/icons/stores-active.svg" alt="">
+            <div>
+              <p>Stores & Services</p>
+              <p class="p2">Choose Your Store</p>
+            </div>
+          </div>
+          <div id="div4">
+            <img src="https://www.sephora.com/img/ufe/icons/community-active.svg" alt="">
+            <p>Community</p>
+          </div>
+          <div id="div5">
+            <img src="https://www.sephora.com/img/ufe/icons/me-active.svg" alt="">
+             <p><a href="Login.html" target="_parent">Happy Morning</a></p>
+          </div>
+          
+        </div>
+        <div id="se1">
+          <div >
+             <a href="wishlist.html"><img src="https://cdn.iconscout.com/icon/free/png-64/like-1480509-1253337.png" alt=""></a> 
+             <a href="index.html"><img src=https://t4.ftcdn.net/jpg/00/97/00/07/240_F_97000769_R4zepLTgmf8G22W7G2o8JA1HeiVK2CkK.jpg alt=""></a>
+             <a href="cart.html"><img src="https://img.icons8.com/ios-glyphs/2x/bag-front-view.png" alt=""  ></a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 3rd part -->
+  
+      <div id="navbar">
+        <div>
+          <select name="" id="">
+            <option value="">New</option>
+            <option value="">All New</option>
+            <option value="">Just Dropped</option>
+            <option value="">New Makeup</option>
+            <option value="">New Skincare</option>
+            <option value="">New Haircare</option>
+            <option value="">New Fragrance</option>
+          </select>
+
+          
+          <select name="" id="">
+            <option value="">Brands</option>
+            <option value="">Brands A-Z</option>
+            <option value="">New Brands </option>
+            <option value="">The Outset</option>
+            <option value="">The Ordinary</option>
+            <option value="">The 7 Virtue</option>
+          </select>
+           <a href="Productpage.html"><p>MakeUp</p></a>
+          <select name="" id="">
+            <option value="">Skincare</option>
+            <option value="">All Skincare</option>
+            <option value="">Moisturizers</option>
+            <option value="">Face Oils</option>
+            <option value="">Face Serums</option>
+          </select>
+          <select name="" id="">
+            <option value="">Hair</option>
+            <option value="">Shampoo & Conditioners</option>
+            <option value="">Hair Oils</option>
+            <option value="">Hair Dryers</option>
+            <option value="">Clean Haircare</option>
+          </select>
+          <a href="Productpage.html"><p>Fragrance</p></a>
+          <select name="" id="">
+            <option value="">Tools & Brushes</option>
+            <option value="">Brush Sets</option>
+            <option value="">Face Brushes</option>
+            <option value="">Curling Irons</option>
+            <option value="">Tweezers & Eyebrow</option>
+          </select>
+          <select name="" id="">
+            <option value="">Bath & Body</option>
+            <option value="">Body Wash & Shower Gel</option>
+            <option value="">Body Sunscreen</option>
+            <option value="">Scrub & Exfolients</option>
+            <option value="">BodyLotion & Body Oils</option>
+          </select>
+          <select name="" id="">
+            <option value="">Mini Size</option>
+            <option value="">All Mini Size</option>
+            <option value="">Hair Oils</option>
+            <option value="">Sephore Favorites</option>
+            <option value="">Fragrance</option>
+          </select>
+          <select name="" id="">
+            <option value="">Gifts</option>
+            <option value="">Gifts Finder</option>
+            <option value="">Gifts Cards</option>
+            <option value="">Value & Gift Sets</option>
+            <option value="">For Teenagers</option>
+          </select>
+          <select name="" id="">
+            <option value="">Beauty Under $20</option>
+            <option value="">Makeup Under $20</option>
+            <option value="">Hair Under $20</option>
+            <option value="">Skincare Under $20</option>
+            <option value="">Fragrance Under $20</option>
+          </select>
+          <select name="" id="">
+            <option value="">Sales & Offers</option>
+            <option value="">Haircare</option>
+            <option value="">Scincare</option>
+            <option value="">Makeup</option>
+            <option value="">Fragrance</option>
+          </select>
+        </div>
+      </div>
+
+    <!-- here complted homepage part -->
+
+    <h1 id="wish">WISHLIST</h1>
+    <div id="products">
+
+    </div>
+</body>
+</html>
+<script>
+    let productcont = document.querySelector("#products");
+
+    let cartLS = JSON.parse(localStorage.getItem("cart-data")) || [];
+
+    let totalPrice = 0;
+    function displayTable(productData){
+    productcont.innerHTML="";
+    totalPrice = 0;
+    productData.forEach(function(elem,index){
+
+          totalPrice += +elem.price;
+        let product = document.createElement("div");
+
+        let img = document.createElement("img")
+        img.src=elem.avatar;
+
+        let name = document.createElement("p")
+        name.innerText = elem.ptag;
+
+        let category = document.createElement("p")
+        category.innerText = elem.category;
+
+        let price = document.createElement("p")
+        price.innerText = "$"+elem.price;
+
+        let img1  = document.createElement("img")
+        img1.src =elem.starimage;
+
+        let rate = document.createElement("p")
+        rate.innerText = elem.rating;
+
+        let deletecart = document.createElement("button")
+        deletecart.innerText = "DELETE";
+        deletecart.addEventListener("click",function(){
+            Delete(elem.productId);
+           
+        })
+        
+     
+
+     product.append(img,category,name,price,img1,rate,deletecart);
+     productcont.append(product);
+    })
+}
+displayTable(cartLS)
+
+
+function Delete(id){
+    let deleted = cartLS.filter(function(ele){
+        return ele.productId != id;
+    })
+
+    // console.log("hello")
+    cartLS=deleted;
+    localStorage.setItem("cart-data",JSON.stringify(cartLS));
+    displayTable(cartLS)
+}
+</script>

@@ -1,0 +1,490 @@
+
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+ 
+  #usecode{
+    width: 100%;
+    height: 50px;
+    
+    background-color: rgb(243, 243, 243);
+    border: 1px solid transparent;
+
+  }
+  
+  #usecode>div>p{
+   text-align: center;
+   color: red;
+  }
+  #usecode>div>p:hover{
+    color: red;
+    font-size: 17px;
+    text-decoration: underline;
+  }
+  #upnav{
+    width: 100%;
+    height: 100px;
+    border: solid 1px transparent;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  #upnav>#se{
+    width: 75%;
+    height: 50px;
+    margin: auto;
+    margin-top: 25px;
+    display: flex;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: space-between;
+  }
+  #upnav>#se1{
+    width: 10%;
+    height: 50px;
+    border: 1px solid tra;
+    margin-right: 120px;
+  }
+  #upnav>#se1>div{
+    display: flex;
+  }
+  
+ 
+  #se1>div>a>img{
+    width: 90%;
+    padding: 10px;
+  }
+  
+  #se1>div>a>img:hover{
+    width: 95%;
+   
+  }
+
+  #upnav>#se>div{
+    width: 15%;
+    height: 50px;
+    margin: auto;
+    
+    display: flex;
+    border: 1px solid transparent;
+  }
+  #upnav>#se>#div1{
+    width: 13%;
+    height: 50px;
+    margin: auto;
+    margin-left: 120px;
+    display: flex;
+    border: 1px solid transparent;
+  }
+  #upnav>#se>#div1>img{
+    width: 100%;
+    margin-top: 10px;
+  }
+  #upnav>#se>#div2{
+    width: 45%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    border: 1px solid transparent;
+  }
+  #upnav>#se>#div3>img{
+    width: 13%;
+    height: 55%;
+    margin-top: 17px;
+    margin-left: 4px;
+  }
+  #upnav>#se>#div4>img{
+    width: 15%;
+    height: 50%;
+    margin-top: 18px;
+    margin-left: 15px;
+  }
+  #upnav>#se>#div5>img{
+    width: 30%;
+    height: 90%;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+  #upnav>#se>#div5>p>a{
+    text-decoration: none;
+    color: black;
+  }
+  #upnav>#se>#div3{
+    width: 19%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    border: 1px solid transparent;
+  }
+  input[type="search"]{
+    height: 70%;
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(188, 188, 188);
+    font-size: 18px;
+  }
+  .p2{
+    font-size: 13px;
+    margin-top: -15px;
+  }
+  #navbar{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+  }
+  #navbar>div{
+    width: 80%;
+    height: 50px;
+    color: white;
+    margin: auto;
+    
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    
+  }
+  #navbar>div>a>p{
+    color: white;
+    /* text-decoration: none; */
+    font-size: 13px;
+    margin-top: 17px;
+  }
+  #navbar>div>select{
+    width: 7%;
+    border: none;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+  }
+
+  /* here start 4th part of landing page  */
+
+  #advertizingdiv{
+    width: 90%;
+    height: auto;
+    display: flex;
+   
+    justify-content: space-evenly;
+   
+    margin-left: 150px;
+  }
+  #advertizingdiv>div{
+       width: 33%;
+       height: auto;
+       margin-top: 8px;
+       background-color: black;
+       color: white;
+       border-radius: 4px;
+       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  #advertizingdiv>div>img{
+    width: 100%;
+  }
+  #advertizing>button{
+    position:absolute;
+    top:50%;
+   font-size: 40px;
+    color: white;
+    width: 40px;
+    height: 150px;
+    border: none;
+    background-color: rgba(50, 49, 49, 0.8);
+    
+  }
+  #advertizing>button:nth-child(2){
+    left: 11%;
+  }
+  #advertizing>button:nth-child(3){
+    right: 4%;
+  }
+  #advertizingdiv>div,h2,p,p{
+    margin-left: 10px;
+
+  }
+  #advertizingdiv>div>h2+p+p{
+    font-weight: bold;
+  }
+  #advertizingdiv>div>h2+p+p:hover{
+       text-decoration: underline;
+  }
+  #advertizingdiv>div>h2+p:hover{
+       text-decoration: underline;
+  }
+
+  
+/* here start 5th part of landing page  */
+#advertizing+h2{
+ margin-left: 160px;
+}
+
+#justdroppeddiv{
+ 
+  width: 90%;
+    height: auto;
+    display: flex;
+   border: 1px solid transparent;
+    justify-content: space-evenly;
+   margin-left: 150px;
+}
+#justdroppeddiv>div{
+  width: 14%;
+  height: auto;
+  margin-top: 8px;
+  background-color: white;
+  color: black;
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+#justdroppeddiv>div>img{
+  width: 100%;
+}
+#justdropped>button{
+    position:absolute;
+    top:120%;
+    font-size: 40px;
+    color: white;
+    width: 40px;
+    height: 150px;
+    border: none;
+    background-color: rgba(50, 49, 49, 0.8);
+    
+  }
+  #justdropped>button:nth-child(2){
+    left: 12%;
+  }
+  #justdropped>button:nth-child(3){
+    right: 4%;
+  }
+  #justdroppeddiv>div>p:nth-child(2){
+    font-weight: bold;
+    font-size: 13px;
+  }
+  #justdroppeddiv>div>p:nth-child(3){
+   
+    font-size: 14px;
+  }
+
+  /* here start 6th part of landing page  */
+
+  #justdropped+h2{
+ margin-left: 160px;
+}
+
+#choosendiv{
+ 
+  width: 90%;
+    height: auto;
+    display: flex;
+   border: 1px solid transparent;
+    justify-content: space-evenly;
+   margin-left: 150px;
+}
+ #choosendiv>div{
+  width: 14%;
+  height: auto;
+  margin-top: 8px;
+  background-color: white;
+  color: black;
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+#choosendiv>div>img{
+  width: 100%;
+}
+#choosen>button{
+    position:absolute;
+    top:170%;
+    font-size: 40px;
+    color: white;
+    width: 40px;
+    height: 150px;
+    border: none;
+    background-color: rgba(50, 49, 49, 0.8);
+    
+  }
+  #choosen>button:nth-child(2){
+    left: 12%;
+  }
+  #choosen>button:nth-child(3){
+    right: 4%;
+  }
+  #choosendiv>div>p:nth-child(2){
+    font-weight: bold;
+    font-size: 13px;
+  }
+  #choosendiv>div>p:nth-child(3){
+   
+    font-size: 14px;
+  }
+
+  /* here start 7th part of landing page  */
+  #choosen+h2{
+ margin-left: 160px;
+}
+
+#beautydiv{
+ 
+  width: 90%;
+    height: auto;
+    display: flex;
+   border: 1px solid transparent;
+    justify-content: space-evenly;
+   margin-left: 150px;
+}
+#beautydiv>div{
+  width: 17%;
+  height: auto;
+  margin-top: 8px;
+  background-color: white;
+  color: black;
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+#beautydiv>div>img{
+  width: 100%;
+}
+#beauty>button{
+    position:absolute;
+    top: 225%;
+    font-size: 40px;
+    color: white;
+    width: 40px;
+    height: 150px;
+    border: none;
+    background-color: rgba(50, 49, 49, 0.8);
+    
+  }
+  #beauty>button:nth-child(2){
+    left: 12%;
+  }
+  #beauty>button:nth-child(3){
+    right: 4%;
+  }
+  #beautydiv>div>p:nth-child(2){
+    font-weight: bold;
+    font-size: 13px;
+  }
+  #beautydiv>div>p:nth-child(3){
+   
+    font-size: 15px;
+  }
+  #beautydiv>div>p:nth-child(4){
+   
+    font-size: 12px;
+  }
+  #beautydiv>div>button{
+    width: 60%;
+    height: 45px;
+    border: 3px solid black ;
+    background-color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    margin-top: 20px;
+
+  }
+
+  /* here start 8th part of landing page  */
+  #part8{
+    width: 89%;
+    height: auto;
+    display:flex;
+   
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-left: 160px;
+  }
+  #part8>div{
+      width: 30%;
+      height:260px;
+      padding: 5px;
+      
+      color: black;
+      border-radius: 5px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      
+  }
+  #part8>div:nth-child(1){
+    background-color: #e0d0b7;
+  }
+  #part8>div:nth-child(2){
+    background-color: #91c3da;
+  }
+  #part8>div:nth-child(3){
+    background-color: #a4e1e4;
+  }
+
+  /* here start 8th part of landing page  */ 
+
+  #part8+h2{
+ margin-left: 160px;
+}
+
+#valuediv{
+ 
+  width: 90%;
+    height: auto;
+    display: flex;
+   border: 1px solid transparent;
+    justify-content: space-evenly;
+   margin-left: 150px;
+}
+ #valuediv>div{
+  width: 14%;
+  height: auto;
+  margin-top: 8px;
+  background-color: white;
+  color: black;
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+#valuediv>div>img{
+  width: 100%;
+}
+#value>button{
+    position:absolute;
+    top:335%;
+    font-size: 40px;
+    color: white;
+    width: 40px;
+    height: 150px;
+    border: none;
+    background-color: rgba(50, 49, 49, 0.8);
+    
+  }
+  #value>button:nth-child(2){
+    left: 12%;
+  }
+  #value>button:nth-child(3){
+    right: 4%;
+  }
+  #valuediv>div>p:nth-child(2){
+    font-weight: bold;
+    font-size: 13px;
+  }
+  #valuediv>div>p:nth-child(3){
+   
+    font-size: 14px;
+  }
+
+  /* end  */
+
+  #end{
+    width: 100%;
+    height: 700px;
+    margin-top: 50px;
+  }
+  #end > img{
+    width:100%;
+  }
+
+
+  /* here home page css end  */
