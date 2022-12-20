@@ -7,3 +7,5 @@ Sephora Clone || A leader in prestige omni-retail, our mission at Sephora is to 
 
 Project Handler:- <h2>Deepak Soni</h2>
 Duration:- 5 Days
+
+Netlify:- https://strong-froyo-6a1e38.netlify.app/
